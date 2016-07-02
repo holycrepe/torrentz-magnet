@@ -31,7 +31,7 @@ gulp.task('css', function () {
 
 gulp.task('default', ['manifest', 'png', 'js', 'css']);
 
-gulp.task('zip', function () {
+gulp.task('zip', ['default'], function () {
 	gulp.src(['extension/*'])
 		.pipe(zip('extension.zip'))
 		.pipe(gulp.dest('.'));
