@@ -5,6 +5,11 @@ pngmin = require('gulp-pngmin'),
 zip = require('gulp-zip'),
 cssmin = require('gulp-cssmin');
 
+gulp.task('manifest', function () {
+	gulp.src(['manifest.json'])
+		.pipe(gulp.dest('extension/'));
+});
+
 gulp.task('png', function () {
 	gulp.src(['*.png'])
 		.pipe(pngmin())
@@ -24,6 +29,8 @@ gulp.task('css', function () {
 		.pipe(gulp.dest('extension/'));
 });
 
+gulp.task('default', ['manifest', 'png', 'js', 'css']);
+
 gulp.task('zip', function () {
 	gulp.src(['extension/*'])
 		.pipe(zip('extension.zip'))
@@ -33,4 +40,5 @@ gulp.task('zip', function () {
 gulp.task('watch', function() {
 	gulp.watch('*.js', ['js']);
 	gulp.watch('*.css', ['css']);
+	gulp.watch('manifest.json', ['manifest']);
 });
