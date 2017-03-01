@@ -1,7 +1,7 @@
 {
-  "name": "torrentzmagnet",
+  "name": "torrentprojectmagnet",
   "version": "1.0.0",
-  "description": "Magnet Links for Torrentz (Fork)\r ===============",
+  "description": "Magnet Links for Torrent Project\r ===============",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "~3.9.1",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holycrepe/torrentz-magnet.git"
+    "url": "https://github.com/holycrepe/torrentproject-magnet.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/holycrepe/torrentz-magnet/issues"
+    "url": "https://github.com/holycrepe/torrentproject-magnet/issues"
   },
-  "homepage": "https://github.com/holycrepe/torrentz-magnet"
+  "homepage": "https://github.com/holycrepe/torrentproject-magnet"
 }

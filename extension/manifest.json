@@ -5,20 +5,17 @@
       "css": ["style.css"],
       "run_at": "document_end",
       "matches": [
-        "*://torrentz.eu/*",
-        "*://torrentz.ch/*",
-        "*://torrentz.me/*",
-        "*://torrentz.in/*",
-        "*://torrentz.com/*"
+        "*://torrentproject.se/*"
       ]
     }
   ],
-  "description": "Adds magnet links to torrent files on Torrentz.",
+  "description": "Adds magnet links to torrent files on Torrent Project.",
   "manifest_version": 2,
-  "name": "Magnet Links for Torrentz",
+  "name": "Magnet Links for Torrent Project",
   "version": "1.0.0",
   "web_accessible_resources": [
-    "icon16.png"
+    "icon16.png",
+    "images/*.png"
   ],
   "icons": {
     "16": "icon16.png",
